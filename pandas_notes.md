@@ -14,11 +14,11 @@
   s.str.startswith()  s.plot(...)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    df.plot(x='a', y='b', kind='bar')      
 
 
-  df.set_index('a').sort_index()        df.loc['value']     
-  df.set_index(['a', 'b']).sort_index() df.loc[('v','u')]    df.loc['v'].loc['u']     
-  df.reset_index('a') df.reset_index(['a','b'])    
-  df.groupby('column')                  .size() .mean() .min() .max()     
-  df.groupby(['column1', 'column2'])    .agg(['min', 'max'])     
+  df.set_index('a').sort_index()   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     df.loc['value']     
+  df.set_index(['a', 'b']).sort_index() &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; df.loc[('v','u')]    df.loc['v'].loc['u']     
+  df.reset_index('a') &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; df.reset_index(['a','b'])    
+  df.groupby('column')    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;              .size() .mean() .min() .max()     
+  df.groupby(['column1', 'column2']) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   .agg(['min', 'max'])     
 
 
   df.unstack()      s.dt.year     
