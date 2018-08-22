@@ -9,9 +9,9 @@
 
   s.str..... -> all string methods can be applied on pandas series having strings       
 
-  s.str.len()        s.value_counts() df[['column1', 'column2']]     
-  s.str.contains()   s.sort_index() df.plot(x='a', y='b', kind='scatter')     
-  s.str.startswith() s.plot(...)      df.plot(x='a', y='b', kind='bar')      
+  s.str.len()    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    s.value_counts() df[['column1', 'column2']]     
+  s.str.contains()  &nbsp; s.sort_index() &nbsp;&nbsp;&nbsp; df.plot(x='a', y='b', kind='scatter')     
+  s.str.startswith()  s.plot(...)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    df.plot(x='a', y='b', kind='bar')      
 
 
   df.set_index('a').sort_index()        df.loc['value']     
