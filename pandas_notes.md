@@ -5,6 +5,8 @@
   df.COLUMN  &nbsp;&nbsp;   series.isnull()  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; df.sort_values('column')     
   df['COLUMN']  series.order() &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   df.sort_values(['column1', 'column2'])      
 
+ * s=series
+
   s.str..... -> all string methods can be applied on pandas series having strings       
 
   s.str.len()        s.value_counts() df[['column1', 'column2']]     
