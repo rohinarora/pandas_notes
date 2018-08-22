@@ -1,9 +1,9 @@
 
-  len(df)     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;           series + value    df[df.c == value]     
-  df.head()  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  series + series2  df[(df.c >= value) & (df.d < value)]     
-  df.tail()  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   series.notnull()  df[(df.c < value) | (df.d != value)]     
-  df.COLUMN  &nbsp;&nbsp;   series.isnull()   df.sort_values('column')     
-  df['COLUMN']  series.order()    df.sort_values(['column1', 'column2'])      
+  len(df)     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;           series + value &nbsp;&nbsp;&nbsp;&nbsp;   df[df.c == value]     
+  df.head()  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  series + series2 &nbsp; df[(df.c >= value) & (df.d < value)]     
+  df.tail()  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   series.notnull() &nbsp;&nbsp;&nbsp; df[(df.c < value) | (df.d != value)]     
+  df.COLUMN  &nbsp;&nbsp;   series.isnull()  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; df.sort_values('column')     
+  df['COLUMN']  series.order() &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   df.sort_values(['column1', 'column2'])      
 
   s.str..... -> all string methods can be applied on pandas series having strings       
 
