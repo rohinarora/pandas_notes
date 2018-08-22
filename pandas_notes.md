@@ -13,6 +13,7 @@
   s.str.contains()  &nbsp; s.sort_index() &nbsp;&nbsp;&nbsp; df.plot(x='a', y='b', kind='scatter')     
   s.str.startswith()  s.plot(...)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    df.plot(x='a', y='b', kind='bar')      
 
+df.loc - argument- A  label, e.g. 5 or 'a', (note that 5 is interpreted as a label of the index, and never as an integer position along the index).
 
   df.set_index('a').sort_index()   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     df.loc['value']     
   df.set_index(['a', 'b']).sort_index() &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; df.loc[('v','u')]    df.loc['v'].loc['u']     
