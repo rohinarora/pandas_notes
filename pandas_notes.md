@@ -1,3 +1,33 @@
+
+  len(df)     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;           series + value    df[df.c == value]     
+  df.head()  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  series + series2  df[(df.c >= value) & (df.d < value)]     
+  df.tail()  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   series.notnull()  df[(df.c < value) | (df.d != value)]     
+  df.COLUMN  &nbsp;&nbsp;   series.isnull()   df.sort_values('column')     
+  df['COLUMN']  series.order()    df.sort_values(['column1', 'column2'])      
+
+  s.str..... -> all string methods can be applied on pandas series having strings       
+
+  s.str.len()        s.value_counts() df[['column1', 'column2']]     
+  s.str.contains()   s.sort_index() df.plot(x='a', y='b', kind='scatter')     
+  s.str.startswith() s.plot(...)      df.plot(x='a', y='b', kind='bar')      
+
+
+  df.set_index('a').sort_index()        df.loc['value']     
+  df.set_index(['a', 'b']).sort_index() df.loc[('v','u')]    df.loc['v'].loc['u']     
+  df.reset_index('a') df.reset_index(['a','b'])    
+  df.groupby('column')                  .size() .mean() .min() .max()     
+  df.groupby(['column1', 'column2'])    .agg(['min', 'max'])     
+
+
+  df.unstack()      s.dt.year     
+  df.stack()        s.dt.month    
+  df.fillna(value)  s.dt.day   
+  s.fillna(value)   s.dt.dayofweek   
+
+
+
+
+
 dataframe consists of columns, index and values
 
 > df=pd.read_csv('....')
