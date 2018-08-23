@@ -26,20 +26,28 @@ df.loc - argument- A  label, e.g. 5 or 'a', (note that 5 is interpreted as a lab
 
 We can use df.groupby('column') even if column is not in df/created on the fly
 
+df.set_index('<name>',append=True) -> adds to existing index
 
 df.unstack() , df.stack() are vertical analogous to df.set_index() and df.reset_index()
+
+use df.unstack() , df.stack()  to "pivot" the data once you have interesting series/df object
 
 when you groupby> 1 coloumn, your indexes are >1. You can provide the index number which you want to unstack-> (default picks last index)
 
 df.unstack(0)
 df.unstack(1)
 
+You can also explicitly mention which index you want to unstack-
+df.unstack('<column/index name>')
+
+df is created only if there is a index on left (aka index) and index on top (aka columns). If you unstack a lot, you reach a series. If you stack a lot, you reach a series.
+
   df.unstack()      s.dt.year     
   df.stack()        s.dt.month    
   df.fillna(value)  s.dt.day   
   s.fillna(value)   s.dt.dayofweek   
 
-
+df.merge(df2) -> by default merges based on common columns. It will check the common columns in df1 and df2, and then output the rows for which "common columns" are same.
 
 
 
@@ -62,6 +70,9 @@ pandas.core.indexes.range.RangeIndex
 
 > type(columns)      #  we would refer to the columns as a pandas Index object.
 pandas.core.indexes.base.Index
+
+By convention, df has 2 indices- along coloumn, and along index.
+
 
 > type(data)
 numpy.ndarray
@@ -206,7 +217,7 @@ pd.Series.map(....)  -> very good
 Pandas resources
 
 https://twitter.com/tedpetrou/status/920648815761178625
- - book downloaded on ubuntu
+downloaded on inspiron
 
 https://twitter.com/tedpetrou/status/939252987473489920
 
