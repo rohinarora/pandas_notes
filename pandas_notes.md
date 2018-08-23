@@ -29,6 +29,11 @@ We can use df.groupby('column') even if column is not in df/created on the fly
 
 df.unstack() , df.stack() are vertical analogous to df.set_index() and df.reset_index()
 
+when you groupby> 1 coloumn, your indexes are >1. You can provide the index number which you want to unstack-> (default picks last index)
+
+df.unstack(0)
+df.unstack(1)
+
   df.unstack()      s.dt.year     
   df.stack()        s.dt.month    
   df.fillna(value)  s.dt.day   
