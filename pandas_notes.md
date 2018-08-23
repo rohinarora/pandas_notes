@@ -16,11 +16,18 @@
 df.loc - argument- A  label, e.g. 5 or 'a', (note that 5 is interpreted as a label of the index, and never as an integer position along the index).
 
   df.set_index('a').sort_index()   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     df.loc['value']     
-  df.set_index(['a', 'b']).sort_index() &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; df.loc[('v','u')]    df.loc['v'].loc['u']     
+  df.set_index(['a', 'b']).sort_index() &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; df.loc[('v','u')] --- same as ---   df.loc['v'].loc['u']     
   df.reset_index('a') &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; df.reset_index(['a','b'])    
   df.groupby('column')    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;              .size() .mean() .min() .max()     
   df.groupby(['column1', 'column2']) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   .agg(['min', 'max'])     
+  df.groupby('column').coloumn2.min()   -> similar operations
 
+  group by "aggregates" the data
+
+We can use df.groupby('column') even if column is not in df/created on the fly
+
+
+df.unstack() , df.stack() are vertical analogous to df.set_index() and df.reset_index()
 
   df.unstack()      s.dt.year     
   df.stack()        s.dt.month    
